@@ -203,6 +203,7 @@ struct netdissect_options {
   int ndo_Kflag;		/* don't check IP, TCP or UDP checksums */
   int ndo_nflag;		/* leave addresses as numbers */
   int ndo_Nflag;		/* remove domains from printed host names */
+  int ndo_Pflag;        /* leave ports as numbers */
   int ndo_qflag;		/* quick (shorter) output */
   int ndo_Sflag;		/* print raw TCP sequence numbers */
   int ndo_tflag;		/* print packet arrival time */

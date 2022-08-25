@@ -825,7 +825,7 @@ init_servarray(netdissect_options *ndo)
 
 		while (table->name)
 			table = table->nxt;
-		if (ndo->ndo_nflag) {
+		if (ndo->ndo_nflag || ndo->ndo_Pflag) {
 			(void)snprintf(buf, sizeof(buf), "%d", port);
 			table->name = strdup(buf);
 		} else
